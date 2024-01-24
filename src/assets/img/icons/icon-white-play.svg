@@ -1,0 +1,21 @@
+<svg id="PLAY_BTN" data-name="PLAY BTN" xmlns="http://www.w3.org/2000/svg" width="129.7" height="129.656" viewBox="0 0 129.7 129.656">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Ellisse_1" data-name="Ellisse 1" class="cls-1" d="M10857.9,536.644a63.841,63.841,0,1,1-63.9,63.841A63.843,63.843,0,0,1,10857.9,536.644Z" transform="translate(-10793 -535.656)"/>
+  <path id="Triangolo_1" data-name="Triangolo 1" class="cls-2" d="M10884.7,600.5l-41.1,26.86V573.644Z" transform="translate(-10793 -535.656)"/>
+</svg>

@@ -1,0 +1,510 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Congenial";
+  src: url("../src/assets/fonts/congenialregular.eot");
+  src: url("../src/assets/fonts/congenialregular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/congenialregular.woff2") format("woff2"),
+    url("../src/assets/fonts/congenialregular.woff") format("woff"),
+    url("../src/assets/fonts/congenialregular.ttf") format("truetype"),
+    url("../src/assets/fonts/congenialregular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CongenialLight";
+  src: url("../src/assets/fonts/congeniallight.eot");
+  src: url("../src/assets/fonts/congeniallight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/congeniallight.woff2") format("woff2"),
+    url("../src/assets/fonts/congeniallight.woff") format("woff"),
+    url("../src/assets/fonts/congeniallight.ttf") format("truetype"),
+    url("../src/assets/fonts/congeniallight.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CongenialULight";
+  src: url("../src/assets/fonts/congenialultralight.eot");
+  src: url("../src/assets/fonts/congenialultralight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/congenialultralight.woff2") format("woff2"),
+    url("../src/assets/fonts/congenialultralight.woff") format("woff"),
+    url("../src/assets/fonts/congenialultralight.ttf") format("truetype"),
+    url("../src/assets/fonts/congenialultralight.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: congenial;
+  background: #59488d url("./assets/img/bgGradientLanscape.png") no-repeat;
+  background-size: cover;
+  animation: bg-move 3s infinite;
+  background-attachment: fixed;
+  height: 100%;
+  overflow-x: hidden;
+}
+@keyframes bg-move {
+  0%,
+  100% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center bottom;
+  }
+}
+
+.animateHeart {
+  animation: animateH 3s infinite;
+}
+@keyframes animateH {
+  0%,
+  100% {
+    transform: scale(1.2);
+    mix-blend-mode: color-burn;
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+/*------- START > CHECKBOX -------*/
+.checkbox_block {
+  max-width: 500px;
+  margin: auto;
+}
+
+.list_checkbox {
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+.list_checkbox li:not(:last-child) {
+  margin: 0 0 15px;
+}
+
+.list_checkbox li .field_chk {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.list_checkbox li .field_chk .field_input_chk {
+  display: none;
+}
+
+.list_checkbox li .field_chk .dot_chk {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 0;
+  float: left;
+  background-color: #fff;
+}
+
+.list_checkbox li .field_chk .field_input_chk:checked ~ .dot_chk {
+  background-color: #382b5d;
+}
+
+.list_checkbox li .field_chk .txt_chk {
+  float: right;
+  width: calc(100% - 30px);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: CongenialLight;
+}
+
+.list_checkbox li .field_chk .link_white_color {
+  color: #fff;
+}
+/*------- END > CHECKBOX -------*/
+
+/* START > SLIDE 3D CAROUSEL */
+.customSlick .slick-slide {
+  position: relative;
+  transform: scale(0.8);
+  padding: 0 -100px;
+  outline: none;
+  cursor: pointer;
+}
+
+.customSlick .slick-slider {
+  overflow: initial;
+}
+
+.customSlick .slick-list {
+  padding: 100px 50px !important;
+}
+
+.customSlick .slick-slide:not(.slick-center) {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.customSlick .slick-slide:not(.slick-center):after {
+  content: "|";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.customSlick .slick-slide.slick-center {
+  transform: scale(1.2);
+  z-index: 999;
+  aspect-ratio: 2/1;
+}
+
+.customSlick.swiper-container .swiper-slide-prev,
+.customSlick.swiper-container .swiper-slide-next {
+  opacity: 1;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.customSlick .slick-center {
+  transition: 0.3s all;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.customSlick .slick-arrow {
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  z-index: 99;
+  border-radius: 10px;
+}
+
+.customSlick .slick-arrow.slick-prev:before,
+.customSlick .slick-arrow.slick-next:before {
+  display: none;
+}
+
+.customSlick .slick-arrow.slick-prev {
+  background: rgba(0, 0, 0, 0.5) url("./assets/img/icons/icon-white-prev.svg")
+    no-repeat center/30%;
+}
+.customSlick .slick-arrow.slick-next {
+  background: rgba(0, 0, 0, 0.5) url("./assets/img/icons/icon-white-next.svg")
+    no-repeat center/30%;
+}
+
+/* END > SLIDE 3D CAROUSEL */
+
+/* START BACKGROUND PATTERN FILL FORM  */
+.fillForm:after,
+.fillForm:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.fillForm:after {
+  background-image: url("../src/assets/img/bg-form.png");
+  z-index: 2;
+  transform: scale(1.1);
+}
+.fillForm:before {
+  background-image: url("../src/assets/img/vday-hab-dich-lieb.png");
+  z-index: 1;
+  transform: scale(1.2);
+}
+/* END BACKGROUND PATTERN FILL FORM  */
+
+/* START > TABBED */
+.tabbedBlock .customTabs .tab:not(:last-child) {
+  margin: 0 2% 0 0;
+}
+.tabbedBlock .customTabs .tab {
+  width: calc(100% / 3);
+}
+.tabbedBlock .customTabs .tab {
+  color: #fff;
+  background-color: #382b5d;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9375vw;
+}
+.tabbedBlock .customTabs .tab.active {
+  background-color: #fff;
+  color: #382b5d;
+  font-weight: bold;
+}
+
+.tabbedBlock .tabContentBlock .desc {
+  color: #efe9ff;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+/* END > TABBED */
+
+/* START > CUSTOM SCROLLBAR VERTICAL */
+/* For WebKit browsers (Chrome, Safari) */
+.customScrollbar::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+  background-color: #afabb9; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the thumb */
+}
+.customScrollbar::-webkit-scrollbar-track {
+  background-color: #897db0; /* Color of the scrollbar track */
+  border-radius: 10px;
+}
+/* END > CUSTOM SCROLLBAR VERTICAL */
+
+/* START > PLAYER PAGE */
+.btnElement .btnPrimary {
+  width: 100%;
+}
+/* END > PLAYER PAGE */
+
+/* START > RIGHT SIDEBAR */
+.rightSidebar {
+  top: 0;
+  right: -100%;
+  transition: all 0.3s linear;
+}
+
+.rightSidebar.rightSidebarActive {
+  right: 0;
+}
+
+.rightSidebar.rightSidebarActive li {
+  position: relative;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+:is(
+    .rightSidebar .mainSidebar .listItem li a.active,
+    .rightSidebar .mainSidebar .listItem li a:hover
+  ) {
+  color: #fff;
+}
+:is(
+    .rightSidebar .mainSidebar .listItem li a.active .icon,
+    .rightSidebar .mainSidebar .listItem li a:hover .icon
+  ) {
+  filter: brightness(0) invert(1);
+}
+/* END > RIGHT SIDEBAR */
+
+/* START > SELECT DROPDOWN */
+
+.select-menu {
+  max-width: 100%;
+  position: relative;
+}
+.select-menu .select-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #3b2774 url("./assets/img/icons/icon-white-angle-down.svg")
+    no-repeat center/40%;
+  height: 100%;
+  width: 40px;
+  border-radius: 0 10px 10px 0;
+}
+.select-menu .select-btn {
+  display: flex;
+  height: 45px;
+  background: transparent;
+  padding: 0 10px;
+  font-size: 16px;
+  font-family: CongenialLight;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px solid #3b2774;
+  overflow: hidden;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.select-menu .options {
+  position: absolute;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 295px;
+  padding: 3px 10px;
+  border-radius: 8px;
+  background: #58478c;
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.35s;
+  -webkit-animation-fill-mode: both;
+}
+.select-menu .options .option {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  background: #58478c;
+}
+
+.select-menu.active .select-btn {
+  background: #58478c;
+  border-color: #58478c;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  font-family: CongenialLight;
+}
+
+.select-menu.active .select-btn:after {
+  content: "";
+  background-color: #58478c;
+}
+.select-menu.active .sBtn-text {
+  color: #fff;
+}
+.select-menu .options .option .option-text {
+  font-size: 16px;
+  color: #fff;
+}
+.select-menu .sBtn-text {
+  font-size: 16px;
+  color: rgba(56, 43, 93, 1);
+}
+.select-menu.active .options {
+  border-radius: 0 0 10px 10px;
+  display: block;
+  opacity: 0;
+  z-index: 10;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+}
+/* END > SELECT DROPDOWN */
+
+/* START >> SHARE MODAL */
+.shareModal {
+  background: url("./assets/img/bg-pattern.png") no-repeat center/100%;
+}
+/* END >> SHARE MODAL */
+.btnForm .icon img {
+  max-width: 10px;
+}
+
+@media (min-width: 1200px) {
+  .customSlick .slick-arrow.slick-prev {
+    left: -12%;
+  }
+  .customSlick .slick-arrow.slick-next {
+    right: -12%;
+  }
+}
+@media (min-width: 1280px) {
+  .customSlick .slick-arrow.slick-prev {
+    left: -25%;
+  }
+  .customSlick .slick-arrow.slick-next {
+    right: -25%;
+  }
+}
+@media (min-width: 1536px) {
+  .customSlick .slick-arrow.slick-prev {
+    left: -40%;
+  }
+  .customSlick .slick-arrow.slick-next {
+    right: -40%;
+  }
+}
+
+@media (orientation: portrait) {
+  .customSlick .slick-list {
+    padding: 50px !important;
+  }
+  .tabbedBlock .customTabs .tab {
+    font-size: 1.733477789815818vh;
+  }
+  .captionBlock .subtitle br {
+    display: none;
+  }
+
+  .fillForm .innerFill .fieldControl,
+  .select-menu .select-btn {
+    height: 32px;
+  }
+
+  .tabbedBlock .tabContentBlock {
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .fillForm:after {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 767px) {
+  /* START > STICKY HEADER */
+  .stickyHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  /* END > STICKY HEADER */
+}

@@ -1,0 +1,13 @@
+<svg id="PLAY_BTN" data-name="PLAY BTN" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111.656" height="111.75" viewBox="0 0 111.656 111.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <circle id="Ellisse_1" data-name="Ellisse 1" class="cls-1" cx="55.891" cy="55.828" r="54.891"/>
+  <image id="icon-pause" x="33.656" y="30" width="44" height="52" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAA0CAYAAADxAdr3AAAB3UlEQVRoge2aPUscURSGn103BDWNQdLogthuJYEYSBE7xY+/kPwBf4alpLWysLKRYJoFUZNUAUEEg3YWQiCKFgk2irubV+56B0bZbHbOzCXNfeB28877sMxMseeUJNGBaeAt8BxoAMfAJnDe6eKCqAHzwBhQAn4AW8D+g9s74dSZkXSkzlxL+vDo+iLOC0mf/tLp2JE0nvSkCxe7hNJ8K1DWiVz20Hkj6VVa+E2PsgkfC5Dtk3SWofNW0rALljIGE2ZzCi8bOted7BTwxfDe1IE54/tWBq6AwYy5hgvOGEtfAhVjdsIg62g54RFj6TAwZMxWjbn2L9wyhpv+e2nB2tl+lv4Ys/LHmjVRtgb/F1E4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NFE4NOUcf/uXcmZNlHNMgqw5R18e4Qtj9jfwy5i1DtkrTnjXGP7uJ/0WDoBbQ+6pE972U8msrBhl8bJrhlw9mfvOZpz5fi1gOD7gVxqyUE3fYKnH4ImkZwWtH0xKavbYu/B4X8Kdd5JOu4RWJfUXvOBRk7TbpXNP0uvk+k4rNE+A98CknyW7F+sE2AAOczy3/8Kt7bhB/aj/Tv8EPvvVnXuAO3qqXPo0Kc2fAAAAAElFTkSuQmCC"/>
+</svg>
